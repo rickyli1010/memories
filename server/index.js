@@ -2,8 +2,13 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
+import 'dotenv/config';
+
+import postRoutes from './routes/posts.js';
 
 const app = express();
+
+app.use('/posts', postRoutes);
 
 app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
@@ -12,8 +17,6 @@ app.use(cors());
 const mongoID = process.env.MONGO_USERNAME;
 const mongoPW = process.env.MONGO_PASSWORD;
 const CONNECTION_URL = `mongodb+srv://${mongoID}:${mongoPW}@cluster0.fduyn.mongodb.net/`;
-console.log(CONNECTION_URL);
-console.log(mongoID, process.env.MONGO_USERNAME);
 const PORT = process.env.PORT || 5000;
 
 mongoose
