@@ -8,14 +8,21 @@ import {
   Container
 } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import { GoogleLogin, googleLogout } from '@react-oauth/google';
+import jwtDecode from 'jwt-decode';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
 import useStyles from './styles';
 import Input from './Input';
 
 const Auth = () => {
+  console.log(process.env.REACT_APP_GOOGLE_API_TOKEN);
   const classes = useStyles();
   const [showPassword, setShowPassword] = useState(false);
   const [isSignup, setIsSignUp] = useState(false);
+  const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleShowPassword = () =>
     setShowPassword((prevShowPassword) => !prevShowPassword);
@@ -27,6 +34,32 @@ const Auth = () => {
   const switchMode = () => {
     setIsSignUp((prevIsSignUp) => !prevIsSignUp);
     handleShowPassword(false);
+  };
+
+  const googleSuccess = async (res) => {
+    // const result = res?.profileObj;
+
+    const token = res?.credential;
+    const result = jwtDecode(token);
+
+    console.log(res);
+    try {
+      dispatch({
+        type: 'AUTH',
+        data: {
+          result,
+          token
+        }
+      });
+      history.push('/');
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const googleFailure = (error) => {
+    console.log(error);
+    console.log('Google Sign In failed. Try again later');
   };
 
   return (
@@ -85,6 +118,7 @@ const Auth = () => {
           >
             {isSignup ? 'Sign Up' : 'Sign In'}
           </Button>
+          <GoogleLogin onSuccess={googleSuccess} onError={googleFailure} />
           <Grid container justifyContent="flex-end">
             <Grid item>
               <Button onClick={switchMode}>
