@@ -3,7 +3,8 @@ import {
   CREATE,
   UPDATE,
   DELETE,
-  LIKE
+  LIKE,
+  FETCH_BY_SEARCH
 } from '../constants/actionTypes';
 
 export default (posts = [], action) => {
@@ -16,6 +17,8 @@ export default (posts = [], action) => {
         post._id === action.payload._id ? action.payload : post
       );
     case FETCH_ALL:
+      return action.payload;
+    case FETCH_BY_SEARCH:
       return action.payload;
     case CREATE:
       return [...posts, action.payload];
