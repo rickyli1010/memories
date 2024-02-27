@@ -8,9 +8,10 @@ API.interceptors.request.use((req) => {
       JSON.parse(localStorage.getItem('profile')).token
     }`;
   }
-
   return req;
 });
+
+export const fetchPost = (id) => API.get(`/posts/${id}`);
 
 export const fetchPosts = (page) => API.get(`/posts?page=${page}`);
 export const fetchPostsBySearch = (searchQuery) =>
