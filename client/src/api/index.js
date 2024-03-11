@@ -1,6 +1,12 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+let API;
+
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  API = axios.create({ baseURL: 'http://localhost:5000' });
+} else {
+  API = axios.create({ baseURL: 'https://memories-swart-phi.vercel.app/' });
+}
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
