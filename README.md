@@ -18,23 +18,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/rickyli1010/shareme">
-    <img src="shareme_frontend/src/assets/logo.png" alt="Logo" width="304" height="63">
+  <a href="https://github.com/rickyli1010/memories">
+    <img src="memories_frontend/src/assets/logo.png" alt="Logo" width="304" height="63">
   </a>
 
-<h3 align="center">ShareMe Social Media Application</h3>
+<h3 align="center">Memories Social Media Application</h3>
 
   <p align="center">
     This is a Social Media application built with React, Tailwind & Sanity
     <br />
-    <a href="https://github.com/rickyli1010/shareme"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/rickyli1010/memories"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://share-me-rl.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/rickyli1010/shareme/issues">Report Bug</a>
+    <a href="https://github.com/rickyli1010/memories/issues">Report Bug</a>
     ·
-    <a href="https://github.com/rickyli1010/shareme/issues">Request Feature</a>
+    <a href="https://github.com/rickyli1010/memories/issues">Request Feature</a>
   </p>
 </div>
 
@@ -70,7 +70,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://share-me-rl.netlify.app/)
 
-Shareme is a social media platform and visual discovery engine where users can discover and save ideas for various interests. It allows users to create and manage collections of visual bookmarks, known as "pins," that can include images, videos, and other media. These pins are organized on personalized boards, and users can explore content created by others.
+Memories is a social media platform and visual discovery engine where users can discover and save ideas for various interests. It allows users to create and manage collections of visual bookmarks, known as "pins," that can include images, videos, and other media. These pins are organized on personalized boards, and users can explore content created by others.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,7 +86,7 @@ Shareme is a social media platform and visual discovery engine where users can d
 <!-- CLONE OR DOWNLOAD -->
 ## clone or download
 ```terminal
-$ git clone https://github.com/rickyli1010/shareme.git
+$ git clone https://github.com/rickyli1010/memories.git
 $ yarn # or npm i
 ```
 
@@ -95,9 +95,9 @@ $ yarn # or npm i
 ```terminal
 LICENSE
 package.json
-shareme_backend/
+server/
    package.json
-shareme_frontend/
+client/
    package.json
    .env (to create .env, check [prepare your secret session])
 ...
@@ -118,10 +118,10 @@ To get a local copy up and running follow these simple example steps.
 
 notice, you need client and server runs concurrently in different terminal session, in order to make them talk to each other
 
-### Server-side usage(PORT: 3333)
+### Server-side usage(PORT: 5000)
 
 ```terminal
-$ cd shareme_backend   // go to server folder
+$ cd server   // go to server folder
 $ npm i       // npm install packages
 $ sanity start // run it locally
 ```
@@ -139,7 +139,7 @@ Requires:
 
 ```terminal
 // in the root level
-$ cd shareme_Frontend
+$ cd client
 $ echo "REACT_APP_GOOGLE_API_TOKEN=YOUR_REACT_APP_GOOGLE_API_TOKEN" >> src/.env
 $ echo "REACT_APP_SANITY_PROJECT_ID=YOUR_REACT_APP_SANITY_PROJECT_ID" >> src/.env
 $ echo "REACT_APP_SANITY_TOKEN=YOUR_REACT_APP_SANITY_TOKEN" >> src/.env
@@ -148,7 +148,7 @@ $ echo "REACT_APP_SANITY_TOKEN=YOUR_REACT_APP_SANITY_TOKEN" >> src/.env
 ### Start
 
 ```terminal
-$ cd shareme_frontend          // go to client folder
+$ cd client          // go to client folder
 $ yarn # or npm i    // npm install packages
 $ npm run dev        // run it locally
 
@@ -190,7 +190,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Ricky Li - rickyli0321@gmail.com
 
-Project Link: [https://github.com/rickyli1010/shareme](https://github.com/rickyli1010/shareme)
+Project Link: [https://github.com/rickyli1010/memories](https://github.com/rickyli1010/memories)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,19 +199,19 @@ Project Link: [https://github.com/rickyli1010/shareme](https://github.com/rickyl
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/rickyli1010/shareme.svg?style=for-the-badge
-[contributors-url]: https://github.com/rickyli1010/shareme/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/rickyli1010/shareme.svg?style=for-the-badge
-[forks-url]: https://github.com/rickyli1010/shareme/network/members
-[stars-shield]: https://img.shields.io/github/stars/rickyli1010/shareme.svg?style=for-the-badge
-[stars-url]: https://github.com/rickyli1010/shareme/stargazers
-[issues-shield]: https://img.shields.io/github/issues/rickyli1010/shareme.svg?style=for-the-badge
-[issues-url]: https://github.com/rickyli1010/shareme/issues
-[license-shield]: https://img.shields.io/github/license/rickyli1010/shareme.svg?style=for-the-badge
-[license-url]: https://github.com/rickyli1010/shareme/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/rickyli1010/memories.svg?style=for-the-badge
+[contributors-url]: https://github.com/rickyli1010/memories/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/rickyli1010/memories.svg?style=for-the-badge
+[forks-url]: https://github.com/rickyli1010/memories/network/members
+[stars-shield]: https://img.shields.io/github/stars/rickyli1010/memories.svg?style=for-the-badge
+[stars-url]: https://github.com/rickyli1010/memories/stargazers
+[issues-shield]: https://img.shields.io/github/issues/rickyli1010/memories.svg?style=for-the-badge
+[issues-url]: https://github.com/rickyli1010/memories/issues
+[license-shield]: https://img.shields.io/github/license/rickyli1010/memories.svg?style=for-the-badge
+[license-url]: https://github.com/rickyli1010/memories/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ricky1010
-[product-screenshot]: https://github.com/rickyli1010/shareme/assets/29339402/9f6b365a-c775-4905-8b4b-c9cfea152f53
+[product-screenshot]: https://github.com/rickyli1010/memories/assets/29339402/9f6b365a-c775-4905-8b4b-c9cfea152f53
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
