@@ -25,7 +25,7 @@
 <h3 align="center">Memories Social Media Application</h3>
 
   <p align="center">
-    This is a Social Media application built with React, Tailwind & Sanity
+    This is a Social Media application built with React, Node, MongoDB, and Material-UI
     <br />
     <a href="https://github.com/rickyli1010/memories"><strong>Explore the docs »</strong></a>
     <br />
