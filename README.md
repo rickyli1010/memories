@@ -81,7 +81,6 @@ Memories is a social media platform and visual discovery engine where users can 
 * [![React][React.js]][React-url]
 * [![MongoDB][MongoDB.com]][MongoDB-url]
 * [![Express][Express.js]][Express-url]
-* [![Tailwind][Tailwindcss.com]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,8 +114,6 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 - [Node](https://nodejs.org/en/download/) 
 - [npm](https://nodejs.org/en/download/package-manager/)
-- [Sanity](https://www.npmjs.com/package/sanity)
-- [TailwindCSS](https://www.npmjs.com/package/tailwindcss)
 
 notice, you need client and server runs concurrently in different terminal session, in order to make them talk to each other
 
