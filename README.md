@@ -79,6 +79,8 @@ Memories is a social media platform and visual discovery engine where users can 
 ### Built With
 
 * [![React][React.js]][React-url]
+* [![MongoDB][MongoDB.com]][MongoDB-url]
+* [![Express][Express.js]][Express-url]
 * [![Tailwind][Tailwindcss.com]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -228,5 +230,9 @@ Project Link: [https://github.com/rickyli1010/memories](https://github.com/ricky
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Express.js]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
+[Express-url]: https://expressjs.com/
 [TailwindCSS.com]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
 [TailwindCSS-url]: https://tailwindcss.com/ 
+[MongoDB.com]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
+[MongoDB-url]: https://www.mongodb.com/
