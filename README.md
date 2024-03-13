@@ -30,7 +30,7 @@
     <a href="https://github.com/rickyli1010/memories"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://share-me-rl.netlify.app/">View Demo</a>
+    <a href="https://memories-ui.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/rickyli1010/memories/issues">Report Bug</a>
     ·
